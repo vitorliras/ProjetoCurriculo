@@ -1,0 +1,66 @@
+.auth-parent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+.auth-parent form input {
+    background: #ffffff47;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    border-radius: 20px;
+}
+
+.auth-parent form {
+    width: 400px;
+    /* box-shadow: 0 0 3px gray; */
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.202);
+    /* background-color: aqua; */
+    border-radius: 10px;
+    /* background: linear-gradient(rgb(28, 59, 126), rgba(22, 147, 198, 1) 52%, rgba(255, 255, 255, 0) 88%); */
+    background: linear-gradient(rgba(0, 0, 0, 0.856), rgb(40, 41, 42) 72%, rgba(255, 255, 255, 0) 88%);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.auth-parent p {
+    color: white !important;
+    font-weight: bold;
+}
+
+.auth-parent h1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: white !important;
+}
+
+.titulo-perfil{
+    display: flex;
+    margin-top: 10px;;
+}
+
+.titulo-perfil h2{
+    float: left;
+}
+
+.titulo-perfil button{
+    float: right;   
+    margin-left: 65%;
+}
+
+@media(max-width:750px){
+    .minuscircle{
+        margin-bottom: 10px;
+    }
+    .titulo-perfil button{
+         
+        margin-left: 5%;
+    }
+    .ant-tabs-nav-more{
+        display: none;
+    }
+}
