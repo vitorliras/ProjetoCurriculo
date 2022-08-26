@@ -30,9 +30,9 @@ function LayoutDefault(props) {
   );
 
   return (
-    <div className='layout' style={{ backgroundImage: `url('./black.jpg')` }}>
+    <div className='layout' style={{ backgroundImage: `url('../black.jpg')` }}>
       <div className='header'>
-        <img onClick={()=>navigate('/home')} style={{cursor: 'pointer'}} src='./cv.png'/>
+        <img onClick={()=>navigate('/home')} style={{cursor: 'pointer'}} src='../cv.png'/>
         {/* <h1>TESTE CV</h1> */}
         <Dropdown className='btn-menu' overlay={menu} placement="bottomLeft">
           <Button  icon={<UserOutlined/>}>{user.usuario}</Button>

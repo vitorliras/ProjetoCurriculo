@@ -2,9 +2,9 @@
   "name": "projetocurriculo",
   "version": "1.0.0",
   "main": "index.js",
-  "engines":{
+  "engines": {
     "node": "16.14.0",
-    "npm":"8.3.1"
+    "npm": "8.3.1"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -22,5 +22,13 @@
     "nodemon": "^2.0.19"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorliras/ProjetoCurriculo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vitorliras/ProjetoCurriculo/issues"
+  },
+  "homepage": "https://github.com/vitorliras/ProjetoCurriculo#readme",
   "description": ""
 }
