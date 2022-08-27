@@ -72,7 +72,58 @@
     font-size: 16px;
 }
 
+/* template 3 styling */
 
+.template3-parent{
+    color: black !important;
+    padding: 80px;
+    font-family: 'Consolas', sans-serif!important;
+}
+
+.template3-parent h1{
+    color: black !important;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.template3-parent h3{
+    color: black !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.template3-parent h6{
+    color: black !important;
+    padding: 0  !important;
+    margin:0 !important ;
+    font-size: 13px;
+}
+
+.template3-parent h7{
+    color: black !important;
+    font-size: 13px;
+}
+
+.template3-parent p{
+    color: black !important;
+    padding-top: 0  !important;
+    margin-bottom:0 !important ;
+    margin-top: 2px !important;
+    font-size: 13px;
+}
+
+.template3-parent .circle{
+    color: black !important;
+    height: 6px !important;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.template3-parent .expirience .comments{
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    margin-left: 5px;
+}
 
 
 

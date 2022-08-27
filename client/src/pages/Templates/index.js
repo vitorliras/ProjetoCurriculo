@@ -6,6 +6,7 @@ import { Button } from 'antd';
 import {FaPrint,  FaArrowLeft} from 'react-icons/fa'
 import Template1 from './Template1';
 import Template2 from './Template2';
+import Template3 from './Template3';
 
 
 
@@ -25,6 +26,9 @@ function Templates() {
       }
       case '2': {
         return <Template2 />
+      }
+      case '3': {
+        return <Template3 />
       }
     }
   }

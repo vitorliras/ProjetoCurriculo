@@ -52,6 +52,33 @@ function ExperienceProjects() {
                                             <Input placeholder="Duração" />
                                         </Form.Item>
                                     </div>
+                                    <div className='col-md-12'>
+                                        <Form.Item
+                                            {...restField}
+                                            name={[name, 'comentario1']}
+                                            rules={[{ required: false, message: 'Missing first name' }]}
+                                        >
+                                            <Input placeholder="comentário sobre sua experiência (opcional)" />
+                                        </Form.Item>
+                                    </div>
+                                    <div className='col-md-12'>
+                                        <Form.Item
+                                            {...restField}
+                                            name={[name, 'comentario2']}
+                                            rules={[{ required: false, message: 'Missing first name' }]}
+                                        >
+                                            <Input placeholder="comentário sobre sua experiência (opcional)" />
+                                        </Form.Item>
+                                    </div>
+                                    <div className='col-md-11'>
+                                        <Form.Item
+                                            {...restField}
+                                            name={[name, 'comentario3']}
+                                            rules={[{ required: false, message: 'Missing first name' }]}
+                                        >
+                                            <Input placeholder="comentário sobre sua experiência (opcional)" />
+                                        </Form.Item>
+                                    </div>
                                     <div className='col-md-1'>
                                         <MinusCircleOutlined className='minuscircle' style={{ fontSize: 18, color: 'orangered' }} onClick={() => remove(name)} />
                                     </div>

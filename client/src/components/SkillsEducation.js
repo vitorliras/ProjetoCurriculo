@@ -65,7 +65,48 @@ function SkillsEducation() {
                 )}
             </Form.List>
 
-            <h5>Skills</h5>                     
+            <h5>Idiomas</h5>
+            <Form.List name="idiomas">
+                {(fields, { add, remove }) => (
+                    <>
+                        <div className='row'>
+                            {fields.map(({ key, name, ...restField }) => (
+                                <>
+                                    <div className='col-md-4'>
+                                        <Form.Item
+                                            {...restField}
+                                            name={[name, 'lingua']}
+                                            rules={[{ required: true, message: 'Missing first name' }]}
+                                        >
+                                            <Input placeholder="Idioma" />
+                                        </Form.Item>
+                                    </div>
+                                    <div className='col-md-4'>
+                                        <Form.Item
+                                            {...restField}
+                                            name={[name, 'nivelliguagem']}
+                                            rules={[{ required: true, message: 'Missing first name' }]}
+                                        >
+                                            <Input placeholder="Nível do idioma" />
+                                        </Form.Item>
+                                    </div>
+
+                                    <div className='col-md-1'>
+                                        <MinusCircleOutlined className='minuscircle' style={{ fontSize: 18, color: 'orangered' }} onClick={() => remove(name)} />
+                                    </div>
+                                </>
+                            ))}
+                        </div>
+                        <Form.Item>
+                            <Button type="dashed" onClick={() => add()} block icon={<PlusOutlined />}>
+                                Adicionar idiomas
+                            </Button>
+                        </Form.Item>
+                    </>
+                )}
+            </Form.List>
+
+            <h5>Skills</h5>
             <Form.List name="skills">
                 {(fields, { add, remove }) => (
                     <>
@@ -90,7 +131,7 @@ function SkillsEducation() {
                                             <Input placeholder="Nível" />
                                         </Form.Item>
                                     </div>
-                                    
+
                                     <div className='col-md-1'>
                                         <MinusCircleOutlined className='minuscircle' style={{ fontSize: 18, color: 'orangered' }} onClick={() => remove(name)} />
                                     </div>
